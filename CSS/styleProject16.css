@@ -3,3 +3,104 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 237, 237);
+}
+
+#logo_name {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    margin: 20px 0 15px 150px;
+}
+
+#logo_name p {
+    margin: 0 40px 0 0;
+    cursor: default;
+    transition: all 0.5s;
+    user-select: none;
+}
+
+#logo_name p:hover {
+    transform: scale(1.2);
+}
+
+#logo_name ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+#navbar ul li:hover {
+    transform: scale(1.2);
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-weight: 100;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+#navbar ul li a:hover {
+    color: black;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+}
+
+#button button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#button button i {
+    font-size: 15px;
+}
+
+#card_name {
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+#number {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-weight: 700;
+}
+
+#hamburger_menu {
+    display: none;
+}
