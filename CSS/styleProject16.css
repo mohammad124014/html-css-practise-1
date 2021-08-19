@@ -23,14 +23,14 @@ header {
 
 #logo_name {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    margin: 20px 0 15px 150px;
+    margin: 20px 0 15px 0;
 }
 
 #logo_name p {
-    margin: 0 40px 0 0;
+    margin: 0 40px 0 150px;
     cursor: default;
     transition: all 0.5s;
     user-select: none;
@@ -103,4 +103,24 @@ header {
 
 #hamburger_menu {
     display: none;
+    font-size: 30px;
+}
+
+@media (max-width:900px) {
+    #hamburger_menu {
+        display: inherit;
+    }
+    #button {
+        margin-right: 50px;
+    }
+    #logo_name ul,
+    #button button {
+        display: none;
+    }
+    #logo_name p {
+        margin: 20px 0 10px 50px;
+    }
+    #logo_name {
+        margin: 0;
+    }
 }
